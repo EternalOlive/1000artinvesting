@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "dayoung"
+  },
+  "text": {
+    "more": "",
+    "intro": "2021년 kiaf 참여 갤러리들의 인스타그램 팔로잉 목록으로 연결을 시각화 했습니다\n팔로우 목록 중 갤러리와 잡지 등 단체, 조형예술, 컬렉터, 큐레이터, 기획자는 제외하였습니다.\n추가로 예술가와 무관한 계정을 삭제하는 정제 과정을 거친 결과입니다.",
+    "title": "Relationship using Instagram following list"
+  },
+  "legend": {
+    "edgeLabel": "connections",
+    "colorLabel": "cluster",
+    "nodeLabel": "Artist"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
