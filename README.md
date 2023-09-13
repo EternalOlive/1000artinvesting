@@ -1,97 +1,82 @@
 시각화 페이지 https://eternalolive.github.io/1000artinvesting/
 
+이 글은 수업 발표내용을 재구성한 내용이다. 
 
-이 글은 수업 발표내용을 재구성한 내용이다.
-##주제선정
-주제는 “1000 달러로 그림에 투자하기”
-이전 발표에서는 1,000달러로 상업성 있는 작품에 투자하기 위해선 대량 생산된 지브리의 애니메이션 셀에 투자한다고 발표하였고 
+## 주제선정
+주제는 “1000 달러로 그림에 투자하기” 
+이전 발표에서는 1,000달러로 상업성 있는 작품에 투자하기 위해선 대량 생산된 지브리의 애니메이션 셀에 투자한다고 발표하였다.
 앞으로 발표가 4번이나 더 남았으므로 새로운 주제가 필요했다. 
-https://www.artsy.net/article/artsy-editorial-artists-famous-friends-originality-work
 
-자료 도사 도중 이 기사를 발견했다.
+https://www.artsy.net/article/artsy-editorial-artists-famous-friends-originality-work
+![image](https://github.com/EternalOlive/test/assets/58613586/64cc5013-5319-4ca4-a402-684c1d2e223c)
+
+자료 도사 도중  위 기사를 발견했다. 
 예술가들의 관계가 가격에 영향을 미치는 변수로 작용한다는 게 흥미로워 프로젝트를 시작했다.
 
-​
-##데이터 선정
-위 연구에서는 오고간 편지 같은 자료를 바탕으로 연구를 진행했다. 내가 얻을 수 있는 자료들은 오직 온라인에 있는 것 뿐이었으므로 ‘신뢰할만한 관계’를 도출할 수가 없었다.
-방향을 바꿔 갤러리와 예술가의 관계로 방향을 바꿨다.
-<img src="<https://postfiles.pstatic.net/MjAyMjA2MDRfMjQ3/MDAxNjU0MzM3MzY5MTQ5.Q7tCOROEjWPP-ilo_oJ30phWa5c5SpLeFR-jiM_Ttewg.rLL1EhKsEPAAgDKXf_Kw27D3xM6X_24t58zNIyvs-JIg.PNG.itjam/hihi.png?type=w773>">
+## 데이터 선정 
+위 연구에서는 오고간 편지 같은 자료를 바탕으로 연구를 진행했다. 내가 얻을 수 있는 자료들은 오직 온라인에 있는 것 뿐이었으므로 ‘신뢰할만한 관계’를 도출할 수가 없었다. 방향을 바꿔 갤러리와 예술가의 관계로 방향을 바꿨다. 
+![image](https://github.com/EternalOlive/test/assets/58613586/52b6cad6-b523-4650-aa74-3d1f4170cbaf)
 
-미술시장은 작가가 작품을 직접 유통하기도 하지만 많은 경우 갤러리를 통해 거래가 이루어지며 전시회나 아트페어에 참가하는 것 또한 마찬가지로 갤러리를 거친다. 화가와 화랑이 좋은 관계에 있다면 콜렉터들에게 작품 추천이나 전시회 아트페어 참가 확률이 높아진다고 가정했다.
-서로간의 관계를 파악할 수 있는 데이터는 인스타그램에서 가져왔다. 갤러리에서 개최한 데이터의 경우 각 사이트마다 ui가 너무 상이해 추출하기 어렵고 이후 데이터 정재 과정도 어려웠기 때문이다.
-갤러리 목록은 2021 키아프 참가 목록을 참고했다.
-<img src="<https://kiaf.org/wp-content/uploads/2021/06/Homeslide_PC_4.jpg>">
+
+미술시장은 작가가 작품을 직접 유통하기도 하지만 많은 경우 갤러리를 통해 거래가 이루어지며 전시회나 아트페어에 참가하는 것 또한 마찬가지로 갤러리를 거친다. 화가와 화랑이 좋은 관계에 있다면 콜렉터들에게 작품 추천이나 전시회 아트페어 참가 확률이 높아진다고 가정했다. 서로간의 관계를 파악할 수 있는 데이터는 인스타그램에서 가져왔다. 갤러리에서 개최한 데이터의 경우 각 사이트마다 ui가 너무 상이해 추출하기 어렵고 이후 데이터 정재 과정도 어려웠기 때문이다. 갤러리 목록은 **2021 키아프 참가 목록**을 참고했다.  
+
 https://kiaf.org/ko/
 
-##데이터 수집
+## 데이터 수집
 
-나는 국내 작가의 작품을 구매하길 원했으므로 kiaf 참가 갤러리 중 해외에만 있는 갤러리 리스트 들을 제거했고 
-팔로잉 수가 0명인 곳, 팔로잉 목록이 1000명이 넘어가는 곳도 제거했다. 팔로잉 리스트가 너무 길면 관리가 덜 되어 갤러리와 화가 간 관계를 신뢰성있게 뒷받침 해줄 수 없다고 생각했다. 
-인스타그램이 개설되지 않은 곳을 제외하고 선정된 갤러리들의 팔로잉 목록을 모두 엑셀 파일로 담았다.
+나는 국내 작가의 작품을 구매하길 원했으므로 kiaf 참가 갤러리 중 해외에만 있는 갤러리 리스트 들을 제거했고 팔로잉 수가 0명인 곳, 팔로잉 목록이 1000명이 넘어가는 곳도 제거했다. 팔로잉 리스트가 너무 길면 관리가 덜 되어 갤러리와 화가 간 관계를 신뢰성있게 뒷받침 해줄 수 없다고 생각했다. 인스타그램이 개설되지 않은 곳을 제외하고 선정된 갤러리들의 팔로잉 목록을 모두 엑셀 파일로 담았다.
 
-##데이터 정제
+## 데이터 정제
 
-내가 수집한 데이터는 총 14069였다. 여기에서 계정의 팔로워 수가 200미만인곳 계정의 팔로워 중 목록의 갤러리가 2개 미만인 곳을 제외했다.
-추가로 콜렉터, 잡지, 신문사, 정부기관, 미술관, 갤러리 등 예술가가 아닌 계정을 제외했고 그림을 구매하는 과제였으므로 조각가나 도예가도 삭제했다.
+내가 수집한 데이터는 총 14069였다. 여기에서 계정의 팔로워 수가 200미만인곳 계정의 팔로워 중 목록의 갤러리가 2개 미만인 곳을 제외했다. 추가로 콜렉터, 잡지, 신문사, 정부기관, 미술관, 갤러리 등 예술가가 아닌 계정을 제외했고 그림을 구매하는 과제였으므로 조각가나 도예가도 삭제했다.
 
-##시각화
-태블로는 네트워크 시각화가 조금 복잡하여 gephi를 이용해 시각화하였다.
+## 시각화 
+태블로는 네트워크 시각화가 조금 복잡하여 gephi를 이용해 시각화하였다. 
+
 https://eternalolive.github.io/1000artinvesting/
 
-##점검
-정제된 데이터를 확인하기 위해 가장 많은 갤러리들이 팔로우 한 계정 3개를 살펴보았다.
-1위는 18개 갤러리들이 팔로우 한 박서보 작가였고 이어서 이건용(14개), 양해규(12)작가 였다. 
+## 점검 
+정제된 데이터를 확인하기 위해 가장 많은 갤러리들이 팔로우 한 계정 3개를 살펴보았다. 
+1위는 18곳의 갤러리들이 팔로우 한 박서보 작가였고 이어서 이건용(14), 양해규(12)작가 였다. 
 세 작가들 모두 작은 작품도 1억원이 넘었고 대가로 인정받는 작가들이었다.
 
-
-##작가 선정 
-위 3작가를 바탕으로 수집한 데이터가 유의미하다고 판단하였으므로 구매할 작가를 선정하기 위해 데이터를 자세히 들여다보았다.  
+## 작가 선정 
+위 3작가를 바탕으로 수집한 데이터가 유의미하다고 판단하였으므로 구매할 작가를 선정하기 위해 데이터를 자세히 들여다보았다.
 3가지 기준을 세웠는데 1. 한국인일 것 2. 나이가 어릴것 3. 갤러리들이 팔로우 한 숫자가 많은 것 이 3가지였다. 
-3번의 경우 관계수가 5개 이하인 작가부터는 인원이 크게 증가하였으므로 6개 이상인 작가로 한정하였다.
-기준 근거자료(https://link.springer.com/article/10.1007/s10824-022-09449-4, https://voxeu.org/article/pricing-revolution)
-<img src="<https://postfiles.pstatic.net/MjAyMjA2MDRfMjQw/MDAxNjU0MzM4MzIwMjc4.MzSN3ZweXAf5nHlID95y9yTFRaMH6Dd1B_EuccWKWpAg.INjXUjtwcTopGNgF-a6Y15AoQS4drpOWvarqfQLAmEYg.PNG.itjam/image.png?type=w773>">
+3번의 경우 관계수가 5개 이하인 작가부터는 인원이 크게 증가하였으므로 6개 이상인 작가로 한정하였다. 
+기준 근거자료(https://link.springer.com/article/10.1007/s10824-022-09449-4, https://voxeu.org/article/pricing-revolution) 
+![image](https://github.com/EternalOlive/test/assets/58613586/f3db3d46-9a09-488f-8ab5-653b599f8cc7)
 
-남준우의 연구 미술품(그림) 가격의 결정 요인 분석: 
-호당가격제가 성립하는가에서 “화가의 연령이 증가함에 따라 그림가격이 상승하나 그 증가폭은 감소한다”와 다른 자료를 바탕으로 5년 후 가격상승이 가장 기대되는 작가를 30대 중반에서 40대 초반으로 잡았다. 
+남준우의 연구 미술품(그림) 가격의 결정 요인 분석: 호당가격제가 성립하는가에서 “화가의 연령이 증가함에 따라 그림가격이 상승하나 그 증가폭은 감소한다”와 
+다른 자료를 바탕으로 5년 후 가격상승이 가장 기대되는 작가를 30대 중반에서 40대 초반으로 잡았다. 
 권소연 작가와 김수연 작가가 조건에 부합했고 김수연 작가는 인터넷에서 작품 가격을 알 수 없어 권소연 작가의 작품을 선택했다.
-
-<img src="<https://postfiles.pstatic.net/MjAyMjA2MDRfNzgg/MDAxNjU0MzM4NDQyNzg3.VHa0mwPHyhdezFnbLhiInWNO_aZjMZaOr1UgbF6A10Mg.vMfU7-gW7lwsaMda9SShpDfNL4tgdn1vVgnO4f6bdRwg.PNG.itjam/image.png?type=w773>">
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=ar2270&logNo=220738801348
+(작가 소개페이지 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=ar2270&logNo=220738801348)
 권소영 작가는 2022년 37세의 나이로 리움미술관, 국립현대미술관 미술은행 등 다양한 기관에서 작품을 소유하고 있다.
 
-##작품 선정
-open gallery의 작품 중 하나를 선택했으며 20호 사이즈의 140만원이었다.
-<img src="<https://postfiles.pstatic.net/MjAyMjA2MDRfMjY0/MDAxNjU0MzM4MjE4Njk4.AczFtFV8bKvGBtqFRcI7Tj0gsl1RKfFHeH_7YTGCz5sg.IUNU5-hJ9_DXgp4AdnptQ8AUAo4ExBdNqqW7JlpTPckg.PNG.itjam/image.png?type=w773>">
+## 작품 선정 
+open gallery의 작품 중 하나를 선택했으며 20호 사이즈의 140만원이었다. 
+![image](https://github.com/EternalOlive/test/assets/58613586/18d8e9b9-597f-4946-955f-3896dfd1cbd2)
 
-##가격예측
+
+## 가격예측
 최종발표였기 때문에 가격예측도 함께 진행했다. 
-김윤섭 한국미술경영연구소장이 쓴 칼럼에서 연령별 호당 가격은 30대는 10만원 40대는 15~20만원이다.  
+김윤섭 한국미술경영연구소장이 쓴 칼럼에서 연령별 호당 가격은 30대는 10만원 40대는 15~20만원이다.
 오픈 갤러리에 올라온 같은 사이즈의 다른 작품을 참고했을 때 김윤섭 소장이 제시한 가격과 권소연 작가의 작품 가격은 대략 일치했다.
 
-선정 작가의 작품이 5년후 2배에서 1.5배 상승할 여지가 보였으나 신작이 아닌 구작이라는 점과 미술 시장의 동향을 살펴야 했다. 
+선정 작가의 작품이 5년후 2배에서 1.5배 상승할 여지가 보였으나 신작이 아닌 구작이라는 점과 미술 시장의 동향을 살펴야 했다.
 
-2020년 미술시장은 추춤했으나 주식이나 부동산과 마찬가지로 자본이 급격하게 밀려들어왔으며 MZ세대 등 젊은 층이 미술에 관심을 두고 작품을 구매하는 일이 크게 늘었다는 기사를 접할 수 있고 
+2020년 미술시장은 추춤했으나 주식이나 부동산과 마찬가지로 자본이 급격하게 밀려들어왔으며 
+MZ세대 등 젊은 층이 미술에 관심을 두고 작품을 구매하는 일이 크게 늘었다는 기사를 접할 수 있고 
 실제 수업에서 다른 학우들도 앞으로 미술시장은 5년 동안 꾸준히 성장할 것이라고 발표했다. 
-다만 나는 최근 현상이 2006년과 2007년 한국 미술 시장의 크게 성장했다 폭락 후 몇년간 횡보한 것과 최근 주식 시장 사이에 연관성을 들어 당분간 횡보할 것이라고 판단하였다.
+다만 나는 최근 현상이 2006년과 2007년 한국 미술 시장의 크게 성장했다 폭락 후 몇년간 횡보한 것과 
+최근 주식 시장 사이에 연관성을 들어 당분간 횡보할 것이라고 판단하였다. 
+![image](https://github.com/EternalOlive/test/assets/58613586/9832efa5-1811-49d1-8e3c-91787c906787)
+
 (https://www.yna.co.kr/view/AKR20160712074800005, https://www.chosun.com/culture-life/art-gallery/2022/01/05/MHMZ27EF2JA4JHZOBT4UCK5YEY/)
 
 따라서 나는 작품을 가격을 20호의 30대 평균 가격을 적용하여 60만원 상승한 200만원으로 예측했다.
 
-##마무리
+## 마무리 
 데이터 분석을 이용해 처음으로 도출한 결과인데 어려운 점도 많았지만 재미있는 작업이었다. 
 교수님은 이 발표는 세일즈이기 때문에 보수적으로 예측하는 것보다는 긍정적인 방향으로 해보라고 말씀해주셨다. 
 근거를 들어 설득력있는 주장을 펼치는 것이라고 생각해 결과가 조금 아쉽게 나온 것 같지만 나름 만족한다.
-
-
-Template provided by InteractiveVis project
-http://blogs.oii.ox.ac.uk/vis/
-https://github.com/oxfordinternetinstitute/InteractiveVis/
-
-Important. The files must be uploaded to a webserver (or run one locally) in order to be viewed. JavaScript security prevents running the pages locally without a webserver.
-
-The InteractiveVis project of the Oxford Internet Institute with funding by JISC aims to allow easy creation of interactive visualisations for geospatial and network data using native web technologies (HTML5, CSS3, and SVG) and allow these visualisations to be self-contained so that they may run entirely offline in ebooks and other media. The project will survey existing solutions and build the necessary components to fill in missing features and smooth over incompatibilities in between existing libraries. The project will further provide online hosted wizards to allow for the easy creation of these interactive visualizations.
-
-More information about the project is available on the project blog:
-http//blogs.oii.ox.ac.uk/vis/
-
-
